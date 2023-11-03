@@ -1,0 +1,56 @@
+﻿@page
+@model WebApp.Pages.Accounts.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Manage Account</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Account[0].Type)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Account) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+                <td>
+                        <a class="btn btn-outline-info @(item.Type == 1 && Model.acc.Type != 1 ? "disabled" : "")"
+                   asp-page="./Edit" asp-route-id="@item.AccountID">Edit</a>
+                    <a class="btn btn-outline-info" asp-page="./Details" asp-route-id="@item.AccountID">Details</a>
+                        <a class="btn btn-outline-danger @(item.Type == 1 && Model.acc.Type != 1 ? "disabled" : "")"
+                   asp-page="./Delete" asp-route-id="@item.AccountID">Delete</a>
+                            </td>
+        </tr>
+}
+    </tbody>
+</table>

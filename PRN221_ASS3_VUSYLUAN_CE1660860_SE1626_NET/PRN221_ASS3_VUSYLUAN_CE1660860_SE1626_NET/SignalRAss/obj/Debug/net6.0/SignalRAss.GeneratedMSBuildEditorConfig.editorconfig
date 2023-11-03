@@ -1,0 +1,117 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SignalRAss
+build_property.RootNamespace = SignalRAss
+build_property.ProjectDir = C:\Users\admin\Desktop\PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET\PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET\SignalRAss\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\admin\Desktop\PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET\PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET\SignalRAss
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/AppUsers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/AppUsers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/AppUsers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/AppUsers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/AppUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/PostCategories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdENhdGVnb3JpZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/PostCategories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdENhdGVnb3JpZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/PostCategories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdENhdGVnb3JpZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/PostCategories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdENhdGVnb3JpZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/PostCategories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdENhdGVnb3JpZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Posts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Posts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Posts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Posts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Posts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Users/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/PRN221_ASS3_VUSYLUAN_CE1660860_SE1626_NET/SignalRAss/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rj4t65vo44

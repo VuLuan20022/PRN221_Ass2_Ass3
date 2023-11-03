@@ -1,0 +1,86 @@
+﻿@page
+@using Newtonsoft.Json;
+@using WebApp.Models;
+@model WebApp.Pages.Products.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+@{
+    var json = HttpContext.Session.GetString("_login");
+    Account acc;
+    try
+    {
+        acc = JsonConvert.DeserializeObject<Account>(json);
+    }
+    catch
+    {
+        acc = null;
+    }
+}
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.ProductName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.ProductName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.SupplierId)
+        </dt>
+        <dd class="col-sm-10">
+            @*@Html.DisplayFor(model => model.Products.suppliersId.companyName)*@
+            @ViewData["sup"]
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.CategoryId)
+        </dt>
+        <dd class="col-sm-10">
+            @*@Html.DisplayFor(model => model.Products.categoriesId.categoryName)*@
+            @ViewData["cat"]
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.QuantityPerUnit)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.QuantityPerUnit)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.UnitPrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Product.UnitPrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Product.ProductImage)
+        </dt>
+        <dd class="col-sm-10">
+            @* <input type='text'
+            class="form-control"
+            value="@Html.DisplayFor(model => model.Products.productImage)"
+            id="upload" onchange="readURL(this)" />
+            <button onclick="readURL()">test load</button>*@
+            <img class="img-fluid" id="img"
+                 src="@Html.DisplayFor(model => model.Product.ProductImage)" alt="your image" />
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (acc != null && acc.Type == 1)
+    {
+        <a asp-page="./Edit" asp-route-id="@Model.Product?.ProductId">Edit</a>
+    }
+    <a asp-page="/Index">Back to List</a>
+</div>
+
+<script>
+    function readURL() {
+        var url = document.getElementById("upload").value;
+        document.getElementById("img").src = url;
+    }
+</script>

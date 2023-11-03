@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model AppUser
+<link rel="stylesheet" href="~/css/dangnhap.css">
+@using (Html.BeginForm("Login", "Users", FormMethod.Post))
+{
+
+
+    <div class="imgcontainer">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnB7B3MfhbX2pOWKiZwXw4VveUEzuw4PIvw&usqp=CAU" alt="Avatar" class="avatar">
+    </div>
+    <div class="container" style="width:35%; display:flex; justify-content:center; align-items:center">
+        <div>
+            <label for="uname"><b>Email</b></label>
+            @*<input type="text" placeholder="Enter Username" name="username" required>*@
+            @Html.TextBoxFor(m => m.Email, new {@placeholder = "Enter Email"})
+
+            <label for="psw"><b>Password</b></label>
+            @Html.TextBoxFor(m => m.Password, new {@placeholder = "Enter Password",@type = "password"})
+
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            @if (ViewBag.LoginStatus != null && ViewBag.LoginStatus == 0)
+            {
+                <div>
+                    <p style="color:red;">
+                        Invalid UserName or Password, please try it again.
+                    </p>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1;width: 35%;">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+}

@@ -1,0 +1,21 @@
+﻿@page
+@model WebApp.Pages.Auth.LoginModel
+@{
+}
+<form method="post">
+    <div>
+        Username:
+        <input type="text" name="userName"></input>
+    </div>
+    <div>
+        Password:
+        <input type="password" name="password"></input>
+    </div>
+    <div>
+        <button class="btn btn-outline-info" type="submit" >Login</button>
+    </div>
+    @if (!string.IsNullOrEmpty(Model.mess))
+    {
+            <span class="text-danger">@Model.mess</span>
+    }
+</form>

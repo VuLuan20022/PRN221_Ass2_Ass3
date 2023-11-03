@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SignalRAss.Models.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PostID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PublicStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostCategory)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="tableBodyPost"></tbody>
+</table>

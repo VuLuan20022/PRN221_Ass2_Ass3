@@ -1,0 +1,89 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Pizza Menu</h2>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4">
+            Welcome,
+            @if (Model.acc != null)
+            {
+                @Model.acc.FullName
+            }
+            else if (Model.cust != null)
+            {
+                @Model.cust.ContactName
+            }
+        </h1>
+    </div>
+
+    @if (Model.acc != null && Model.acc.Type == 1)
+    {
+        <div class="text-right mb-3">
+            <a asp-page="/Products/Create" class="btn btn-primary">Create new pizza</a>
+        </div>
+    }
+
+    <form class="mb-4" method="get" asp-page="Index">
+        <div class="form-inline">
+            <label class="mr-2">Category:</label>
+            <select class="form-control mr-2" asp-for="catSearch" name="catSearch">
+                <option value="">All</option>
+                @foreach (var item in Model.listCat)
+                {
+                    <option value="@item.CategoryId">@item.CategoryName</option>
+                }
+            </select>
+            <label class="mr-2">Search:</label>
+            <input class="form-control mr-2" name="searchName" type="text" value="@Model.searchName" />
+            <button class="btn btn-outline-primary">Search</button>
+        </div>
+    </form>
+
+    @if (Model.acc != null && Model.acc.Type == 0)
+    {
+        <div class="d-flex flex-row justify-content-center mb-4">
+            <a class="btn btn-outline-info mr-2" asp-page="/Categories/Index">Category</a>
+            <a class="btn btn-outline-info mr-2" asp-page="/Suppli/Index">Supply</a>
+            <a class="btn btn-outline-info mr-2" asp-page="/Orders/Index">Order</a>
+            <a class="btn btn-outline-info" asp-page="/Accounts/Index">Staff</a>
+        </div>
+    }
+
+    <div class="row">
+        @foreach (var item in Model.Products)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <a asp-page="Products/Details" asp-route-id="@item.ProductId">
+                        <img src="@item.ProductImage" class="card-img-top" alt="@item.ProductName">
+                    </a>
+                    <div class="card-body">
+
+                        <h5 class="card-title"><b>@item.ProductName</b></h5>
+                        
+                        <p class="card-text">@item.ProductDescription</p>
+                        <p class="font-weight-bold">$ @item.UnitPrice</p>
+                        <p class="font-weight-bold"><b>Category: @item.CategoriesId.CategoryName</b> </p>
+                        @if (Model.acc != null && (Model.acc.Type == 0 || Model.acc.Type == 1))
+                        {
+                            <a asp-page="/Orders/Create" asp-route-id="@item.CategoriesId" class="btn btn-primary">Add to Cart</a>
+                            <a asp-page="/Products/Edit" asp-route-id="@item.ProductId" class="btn btn-info">Edit</a>
+                            <a asp-page="/Products/Delete" asp-route-id="@item.ProductId" class="btn btn-danger">Delete</a>
+                        }else{
+                            <a asp-page="#" asp-route-id="@item.CategoriesId" class="btn btn-primary" >Add to Cart</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="mt-5 text-center">
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+</div>

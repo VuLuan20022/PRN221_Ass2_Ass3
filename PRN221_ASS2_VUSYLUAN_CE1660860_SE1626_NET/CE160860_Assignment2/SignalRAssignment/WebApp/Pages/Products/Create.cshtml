@@ -1,0 +1,95 @@
+﻿@page
+@model WebApp.Pages.Products.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
+
+            <div class="form-group">
+                <label asp-for="Product.ProductName" class="control-label">Name</label>
+                <input asp-for="Product.ProductName" class="form-control" />
+                <span asp-validation-for="Product.ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.UnitPrice" class="control-label">Price</label>
+                <input asp-for="Product.UnitPrice" class="form-control" />
+                <span asp-validation-for="Product.UnitPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.ProductDescription" class="control-label">Description</label>
+                <input asp-for="Product.ProductDescription" class="form-control" />
+                <span asp-validation-for="Product.ProductDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.SupplierId" class="control-label">Supplier</label>
+                <select asp-for="Product.SupplierId" class="form-control">
+                    @foreach (var item in Model.listSup)
+                    {
+                        <option value="@item.SupplierId">@item.CompanyName</option>
+                    }
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Product.CategoryId" class="control-label">Category</label>
+                <select asp-for="Product.CategoryId" class="form-control">
+                    @foreach (var item in Model.listCat)
+                    {
+                        <option value="@item.CategoryId">@item.CategoryName</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Product.IsPizzaOfWeek" class="control-label">Is Pizza of the Week </label>
+                <input type="checkbox" asp-for="Product.IsPizzaOfWeek" />
+                <span asp-validation-for="Product.IsPizzaOfWeek" class="text-danger"></span>
+            </div>
+
+            
+
+            <div class="form-group">
+            <label asp-for="Product.ProductImage" class="control-label"></label>
+            <input id="img" asp-for="Product.ProductImage" required class="form-control" />
+            <span asp-validation-for="Product.ProductImage" class="text-danger"></span>
+
+            <button type="button" onclick="readURL()">test load</button>
+            <img class="img-fluid" id="img"
+            src="#"
+            alt="your image" />
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<script>
+    function readURL() {
+        var url = document.getElementById("upload").value;
+        document.getElementById("img").src = url;
+    }
+</script>

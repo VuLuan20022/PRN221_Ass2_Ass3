@@ -1,0 +1,36 @@
+﻿@page
+@model WebApp.Pages.Auth.RegisterModel
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>Register</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="UserName">Username</label>
+                            <input id="UserName" class="form-control" required type="text" asp-for="account.UserName" placeholder="Enter your username" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Password">Password</label>
+                            <input id="Password" class="form-control" required type="password" asp-for="account.Password" placeholder="Enter your password" />
+                        </div>
+                        <div class="form-group">
+                            <label for="FullName">Full Name</label>
+                            <input id="FullName" class="form-control" required type="text" asp-for="account.FullName" placeholder="Enter your full name" />
+                        </div>
+                        <!-- This input is hidden and does not need visual styling -->
+                        <input type="hidden" asp-for="account.Type" value="2" />
+
+                        <div class="form-group text-center">
+                            <button class="btn btn-success">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
